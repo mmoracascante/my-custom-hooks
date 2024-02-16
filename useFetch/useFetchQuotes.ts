@@ -1,10 +1,14 @@
 import { useEffect, useState } from "react"
-import { QuotesTypes } from "../types"
 
 interface StateTypes {
     data: QuotesTypes[] | null,
     isLoading: boolean,
     hasError: any,
+}
+
+export interface QuotesTypes {
+    quote: string;
+    author: string;
 }
 
 
